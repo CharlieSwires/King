@@ -21,7 +21,8 @@ public class KingTest {
     private static Map<Integer, Integer> levelScoreMap = new HashMap<Integer, Integer>();
     private static Map<String, Date> sessionKeyMap = new HashMap<String, Date>();
     private static Map<String, Integer> useridMap = new HashMap<String, Integer>();
-    private static Long SESSION_TIMEOUT = (long)10*60*1000;
+    private static final Long SESSION_TIMEOUT = (long)10*60*1000;//10 mins
+    private static final int MAX_LIST = 15;
     
     private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
     private static String bytesToHex(byte[] bytes) {
@@ -95,8 +96,8 @@ public class KingTest {
             StringBuilder sb = new StringBuilder();
             int itemCount = 0;
             for (Object item : unsortedList) {
-                if (itemCount++ > 0 && itemCount <= 15) sb.append(", ");
-                if (itemCount > 15) break;
+                if (itemCount++ > 0 && itemCount <= MAX_LIST) sb.append(", ");
+                if (itemCount > MAX_LIST) break;
                 if (scoreAndUid.get(item) != null) {
                 sb.append(item.toString()+"="
                         +scoreAndUid.get(item).toString());
