@@ -7,7 +7,7 @@ is deployed in the Dockerfile. </p>
 Also I build a war not a jar basically I'm more comfortable deploying 
 spring boot on Tomcat 9 if this is a problem let me know? </p>
 <p> I've tried to save time by not doing any JUnit tests, it was just as 
-easy to test as I go. </p>
+easy to test as I go. I have done one big one to test the max 15 requirement. </p>
 <p> I tried the library you suggested and found that the api was more difficult  
 than this way. I asked the questions and the agent replied do it any way 
 you can. </p>
