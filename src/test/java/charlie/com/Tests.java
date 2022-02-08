@@ -82,10 +82,10 @@ class Tests {
         ResponseEntity<String> session20 = rController.get(31420);
         pb.setScore(12323);
         rController.post(1, session20.getBody(), pb);
-        ResponseEntity<String> session21 = rController.get(31421);
         pb.setScore(12324);
-        rController.post(1, session21.getBody(), pb);
-        Assert.assertEquals("Max 15", rController.gethighscorelist(1).getBody(),"12324=31421, 12323=31420, 12322=31419, 12321=31418, 12320=31417, 12319=31416, 12318=31415, 12317=31414, 12316=31413, 12315=31412, 12314=3111, 12313=31410, 12312=3149, 12311=3148, 12310=3147");
+        rController.post(1, session20.getBody(), pb);//handles same user
+        System.out.println(rController.gethighscorelist(1).getBody());
+        Assert.assertEquals("Max 15", rController.gethighscorelist(1).getBody(),"12324=31420, 12322=31419, 12321=31418, 12320=31417, 12319=31416, 12318=31415, 12317=31414, 12316=31413, 12315=31412, 12314=3111, 12313=31410, 12312=3149, 12311=3148, 12310=3147, 1239=3146");
     }
 
 }

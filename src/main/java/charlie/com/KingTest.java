@@ -63,7 +63,7 @@ public class KingTest {
             levelScoreMap.put(levelid, score);
 
             for (Integer key : levelUseridMap.get(levelid).keySet()) {
-                if (levelUseridMap.get(levelid).containsValue(userid)) {
+                if (levelUseridMap.get(levelid).get(key).equals(userid)) {
                     levelUseridMap.get(levelid).remove(key);
                     break;
                 }
