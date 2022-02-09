@@ -2,15 +2,12 @@ package charlie.com;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import junit.framework.Assert;
 
 class Tests {
-    @Autowired
     private RController rController;
-    @Autowired
     private KingTest kt;
     
     @BeforeEach
