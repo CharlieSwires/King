@@ -1,4 +1,4 @@
-package charlie.com;
+package com.charlie;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

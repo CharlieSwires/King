@@ -1,4 +1,4 @@
-package charlie.com;
+package com.charlie;
 
 public class PayloadBean {
 

@@ -1,4 +1,4 @@
-package charlie.com;
+package com.charlie;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

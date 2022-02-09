@@ -1,8 +1,12 @@
-package charlie.com;
+package com.charlie;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.ResponseEntity;
+
+import com.charlie.KingTest;
+import com.charlie.PayloadBean;
+import com.charlie.RController;
 
 import junit.framework.Assert;
 

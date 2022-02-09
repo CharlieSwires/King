@@ -1,7 +1,6 @@
-package charlie.com;
+package com.charlie;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 /**
  * Copyright 2021 Charles Swires All Rights Reserved
