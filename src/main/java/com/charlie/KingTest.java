@@ -107,4 +107,8 @@ public class KingTest {
         }
         return null;
     }
+
+    public void updateDate(String sessionkey) {
+        sessionKeyMap.put(sessionkey,new Date(new Date().getTime()+SESSION_TIMEOUT));
+    }
 }

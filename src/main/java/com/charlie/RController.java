@@ -35,6 +35,7 @@ public class RController {
     @PostMapping(path="{levelid}/score", consumes="application/json")
     public ResponseEntity post(@PathVariable("levelid") Integer levelid,@RequestParam String sessionkey, @RequestBody PayloadBean score) {
         if (!kingTest.isValidSession(sessionkey)) return new ResponseEntity(HttpStatus.OK);
+        kingTest.updateDate(sessionkey);
         Integer userid = kingTest.getUserid(sessionkey);
         kingTest.recordLevelAndScore(userid, levelid, score.getScore());
         return new ResponseEntity(HttpStatus.OK);
