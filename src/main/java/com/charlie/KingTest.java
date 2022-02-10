@@ -89,7 +89,7 @@ public class KingTest {
                     Integer a = (Integer)o1;
                     Integer b = (Integer)o2;
                     if (a == null || b == null) return 0;
-                    return b-a;
+                    return b-a;//descending
                 }
 
             });
