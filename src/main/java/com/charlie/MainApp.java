@@ -2,11 +2,7 @@ package com.charlie;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-/**
- * Copyright 2021 Charles Swires All Rights Reserved
- * @author charl
- *
- */
+
 @SpringBootApplication
 public class MainApp extends SpringBootServletInitializer{
 
